@@ -38,8 +38,9 @@ function App() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await axios.get(`${https://dashboard-hntf.onrender.com}/api/data`);
-        setData(response.data);
+     const response = await axios.get(`https://dashboard-hntf.onrender.com/api/data`);
+     setData(response.data);
+
         setLoading(false);
       } catch (error) {
         console.error("Error fetching data:", error);

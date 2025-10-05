@@ -38,7 +38,7 @@ function App() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await axios.get("http://localhost:5000/api/data");
+        const response = await axios.get(`${https://dashboard-hntf.onrender.com}/api/data`);
         setData(response.data);
         setLoading(false);
       } catch (error) {
